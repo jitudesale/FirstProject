@@ -11,7 +11,7 @@ public class InventoryApp {
 		char choice;
 		do {
 			System.out.println("Inventory Management Service");
-			System.out.println("1. addProduct\2. removeProduct\3. updateInventory\4. displayInventory\5. displayTotalValue\6. searchByName\7. searchByCategory");
+			System.out.println("1. addProduct \2. removeProduct \3. updateInventory\4. displayInventory\5. displayTotalValue\6. searchByName\7. searchByCategory");
 			System.out.println("Enter Index");
 			int index = sc.nextInt();
 			switch(index)
@@ -23,15 +23,18 @@ public class InventoryApp {
 				iv.removeProduct();
 				break;
 			case 3:
-				iv.displayInventory();
+				iv.updateInventory();
 				break;
 			case 4:
-				iv.diaplayTotalValue();
+				iv.displayInventory();
 				break;
 			case 5:
-				iv.searchByName();
+				iv.diaplayTotalValue();
 				break;
 			case 6:
+				iv.searchByName();
+				break;
+			case 7:
 				iv.searchByCategory();
 				break;
 			case 0:
@@ -44,6 +47,7 @@ public class InventoryApp {
 			}
 			System.out.println("Do you want to continue if yes press Y or y");
 			choice=sc.next().charAt(0);
+			sc.close();
 		}while(choice=='Y'||choice=='y');
 
 	}

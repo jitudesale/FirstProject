@@ -12,7 +12,7 @@ public class ServiceApp {
 		do
 		{
 			System.out.println("Vehicle Service Management System");
-			System.out.println("1. Add Vehicle\n2. Remove Vehicle\n3. Display All Vehicles\n4. Search by Make\n5. Search by Model\n6. Search by Type\n7. Add Service Record\n8. Display Service History\n0. Exit");
+			System.out.println("1. Add Vehicle \n2. Remove Vehicle \n3. Display All Vehicles \n4. Search by Make \n5. Search by Model \n6. Search by Type \n7. Add Service Record \n8. Display Service History \n0. Exit");
 			System.out.println("Enter Your Choice: ");
 			int ch=sc.nextInt();
 			try
